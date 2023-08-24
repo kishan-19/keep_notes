@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    height: 100vh;
+} */
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand{
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.add-note-heading{
+    height: 50px;
+}
+.btn-add-note{
+    float: right;
+    margin: 10px 36px;
+    border: none;
+    background: none;
+}
+.arrow{
+    border: 1px solid black;
+    background:yellow;
+    border-radius: 50%;
+    position:absolute;
+    margin-left: -29px;
+    transition:transition 5s,width 2s,border-radius 0.5s;
+    transition-timing-function:ease-in
+}
+.arrow:hover{
+    transform:rotateZ(180deg);
+    width:100px;
+    border-radius: 5px;
+
+}
+.arrow i{
+    width: 22px;
+}
+.add-note_name:hover{
+    text-decoration: double;
+    font-size: 17px;  
+    color: whitesmoke; 
+}
+.note{
+    background: whitesmoke;
+    display: inline-grid;
+    height: 194px;
+    width: 340px;
+    margin: 23px 17px;
+    overflow: auto;
+    overflow-y: scroll;
+}
+.opration{
+    height: 38px;
+}
+.btn-opration{
+    float: right;
+    margin: 6px 12px;
+}
+.btn-opration button{
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    color: whitesmoke;
+}
+.save{
+    background-color: #065206;
+    color: black;
+}
+.save:hover{
+    background-color: whitesmoke;
+    color: #009800;
+}
+.edite{
+    background-color:#009800;
+}
+.delete{
+    background-color: red;
+}
+.edite:hover{
+    background-color: whitesmoke;
+    color:#009800;
+}
+.delete:hover{
+    background-color: whitesmoke;
+    color: red;
+}
+.note textarea{
+    background-color: whitesmoke;
+    margin: 0px 10px 0px 17px;
+    resize: none;
+    height:117px;
+    border: none;
+    overflow: hidden;
+    outline: none;
+}
+.main{
+    height: 500px;
+    margin-left: 10px;
+    overflow-wrap: anywhere;
+}
+
+/* js for us */
+.hidden{
+    display: none;
+}
+
+@media (max-width:364){
+    .note{
+        width: 100px;
+    height: 100px;
+
+    }
+}
